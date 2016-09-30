@@ -1,8 +1,93 @@
 body {
-  font-size: 80%;
+  font-size: 100%;
 }
 
-.frontpage-header {
-  color: #4d79ff;
-  font-size: 1em;
+a {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+}
+
+a:link, a:hover, a:active, a:focus {
+  color: #b30000;
+  text-decoration: none;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+h2 {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+p.large {
+  font-size: 34px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.75em;
+  letter-spacing: .4px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.site-header {
+  font-family: 'Oleo Script', Arial, sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-style: normal;
+  letter-spacing: 0.09375em;
+}
+
+.row-fluid.small-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row-fluid.small-gutters > [class^="col-"],
+.row-fluid.small-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.banner-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.banner-image-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.row-centered {
+  text-align: center;
 }

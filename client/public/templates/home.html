@@ -1,1 +1,61 @@
-<h1>Test Home</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 banner-image-container">
+      <img src="/client/public/images/markwardsface.jpeg" class="banner-image"></img>
+    </div>
+  </div>
+  <div class="row text-center">
+    <h1>Bio</h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <p>
+        RAISED IN CARRBORO, NORTH CAROLINA, MARK'S INTEREST IN MUSIC BEGAN AT A YOUNG AGE.
+        FORMAL LESSONS IN GUITAR TOOK HIM TO HIGH SCHOOL WHERE HE FOUND HIS FIRST ACADEMIC OUTLET IN HIS HIGH SCHOOL JAZZ LAB.
+        MARK EVENTUALLY ENROLLED AT BERRY COLLEGE IN ROME, GA, HONING HIS SKILLS IN JAZZ GUITAR PERFORMANCE AND EARNING A BACHELORS DEGREE IN PERFORMANCE.
+        GUITAR HAD TAKEN MARK 15 YEARS THROUGH PERFORMANCE AND ENSEMBLE UNTIL HE FOUND A PASSION FOR SONGWRITING AND SINGING.
+        NOW, MARK STRIVES TO CRAFT UNIQUE SONGS THAT CAN EVOKE GENUINE EMOTION IN THE LISTENER WHILE STILL CHALLENGING THE EAR.
+        HAVING ALREADY PLAYED WITH PREMIER ARTISTS SUCH AS TROY ROBERTS AND KENYON CARTER DURING HIS CAREER AT BERRY, MARK'S INTENTION IS TO BRING THE SAME FEROCITY OF HIGH CALIBER IMPROVISATION AND THE SUBTLENESS OF SONGWRITING INTO ONE ENTITY DESIGNED TO GIVE THE AUDIENCE PERMANENT STANK FACE.
+        HE HOPES YOU'LL JOIN HIM.
+      </p>
+    </div>
+  </div>
+  <div style="margin-top:150px;margin-bottom:150px;"></div>
+  <div class="row">
+    <div class="col-xs-12 banner-image-container">
+      <img src="/client/public/images/markwards-stairs.jpeg" class="banner-image" style="max-width:80%"></img>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+    <p class="large">
+      On Tour<br><br>
+
+      Sept. 22nd @Johnny's Gone Fishing, Carrboro, NC<br><br>
+
+      Sept. 25th, @Carrboro Music Festival, Carrboro, NC- 1pm @ Jesse's Outdoor stage<br><br>
+
+      Sept. 30th @ Lenny Boy Brewing, Charlotte, NC<br><br>
+
+      Oct. 3rd @Eddies Attic open mic, Atlanta, GA@ 9:30<br><br>
+
+      Oct. 22nd @2nd Wind, Carrboro, NC<br><br>
+
+      Nov. 30th @2nd wind's 3CC feature<br><br>
+
+
+    </p>
+    </div>
+  </div>
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="slideInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+
+</div>

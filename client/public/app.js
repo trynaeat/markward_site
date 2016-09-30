@@ -1,4 +1,4 @@
-var ts = angular.module('ts', ['ngRoute', 'ui.bootstrap']);
+var ts = angular.module('ts', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 ts.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode({
     enabled: true,
@@ -19,5 +19,5 @@ ts.config(function($routeProvider, $locationProvider) {
 });
 
 ts.controller('rootController', ['$scope', '$location', function($scope, $location) {
-  
+
 }]);
