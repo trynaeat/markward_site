@@ -1,6 +1,5 @@
-var ts = angular.module('ts');
-ts.controller('contactController', ['$scope', '$http', function($scope, $http) {
-  console.log('contactController');
+var ms = angular.module('marksite');
+ms.controller('contactController', ['$scope', '$http', '$window', function($scope, $http, $window) {
 
   $scope.alerts = [];
 
@@ -15,6 +14,7 @@ ts.controller('contactController', ['$scope', '$http', function($scope, $http) {
         type: 'success',
         msg: 'Email sent successfully!'
       });
+      $window.location.reload();
     })
     .catch(function() {
       $scope.alerts.push({

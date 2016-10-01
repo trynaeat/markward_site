@@ -1,8 +1,6 @@
-var ts = angular.module('ts');
-ts.controller('homeController', ['$scope', function($scope) {
-  console.log('homeController');
+var ms = angular.module('marksite');
+ms.controller('homeController', ['$scope', function($scope) {
 
-  $('#home-link').focus();
   $scope.slideInterval = 3000;
   $scope.active = 0;
   $scope.noWrapSlides = false;

@@ -1,5 +1,5 @@
-var ts = angular.module('ts', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
-ts.config(function($routeProvider, $locationProvider) {
+var ms = angular.module('marksite', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
+ms.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode({
     enabled: true,
     requireBase: false
@@ -18,6 +18,6 @@ ts.config(function($routeProvider, $locationProvider) {
   });
 });
 
-ts.controller('rootController', ['$scope', '$location', function($scope, $location) {
+ms.controller('rootController', ['$scope', '$location', function($scope, $location) {
 
 }]);

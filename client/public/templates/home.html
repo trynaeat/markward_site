@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row text-center">
-    <h1>Bio</h1>
+    <h1 id="bio">Bio</h1>
   </div>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
@@ -26,7 +26,7 @@
       <img src="/client/public/images/markwards-stairs.jpeg" class="banner-image" style="max-width:80%"></img>
     </div>
   </div>
-  <div class="row">
+  <div id="tour" class="row">
     <div class="container">
     <p class="large">
       On Tour<br><br>
@@ -47,15 +47,33 @@
     </p>
     </div>
   </div>
-  <div style="height: 305px">
-    <div uib-carousel active="active" interval="slideInterval" no-wrap="noWrapSlides">
-      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <h4>Slide {{slide.id}}</h4>
-          <p>{{slide.text}}</p>
+  <div class="row" id="visual">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div style="margin:auto;margin-top:50px;margin-bottom:50px;">
+        <div uib-carousel active="active" interval="slideInterval" no-wrap="noWrapSlides">
+          <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <div class="carousel-caption">
+              <h4>Slide {{slide.id}}</h4>
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="row social-buttons text-center">
+    <a href="https://www.instagram.com/perrier_kid" class="btn btn-social-icon btn-instagram social-button">
+      <span class="fa fa-instagram"></span>
+    </a>
+    <a href="https://www.twitter.com/perrier_kid" class="btn btn-social-icon btn-twitter social-button">
+      <span class="fa fa-twitter"></span>
+    </a>
+    <a href="https://www.soundcloud.com/markmorton" class="btn btn-social-icon btn-soundcloud social-button">
+      <span class="fa fa-soundcloud"></span>
+    </a>
+    <a href="https://www.facebook.com/markmortonjrmusic" class="btn btn-social-icon btn-facebook social-button">
+      <span class="fa fa-facebook"></span>
+    </a>
+  </div>
 </div>

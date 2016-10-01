@@ -1,1 +1,27 @@
-<h1>Test Contact</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2" style="margin-top:100px;margin-bottom:100px;">
+    <form name="form" ng-submit="submitForm()" novalidate>
+        <div class="form-group" ng-class="{ 'has-error' : form.name.$invalid && !form.name.$pristine }">
+          <label>Name <sup>*</sup></label>
+          <input type="text" class="form-control" name="name" placeholder="Name" ng-model="emailForm.name" required></input>
+          <p ng-show="form.name.$invalid && !form.name.$pristine" class="help-block">Your name is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : form.subject.$invalid && !form.subject.$pristine }">
+          <label for="subject">Subject <sup>*</sup></label>
+          <input type="text" class="form-control" name="subject" placeholder="Subject" ng-model="emailForm.subject" required></input>
+          <p ng-show="form.subject.$invalid && !form.subject.$pristine" class="help-block">Subject is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : form.body.$invalid && !form.body.$pristine }">
+          <label for="body">Body <sup>*</sup></label>
+          <textarea class="form-control" name="body" rows="8" cols="50" ng-model="emailForm.body" ng-trim="false" maxlength="2000" required></textarea>
+          <span class="form-help" ng-hide="form.body.$invalid && !form.body.$pristine">Characters remaining: {{2000 - emailForm.body.length}}</span>
+          <p ng-show="form.body.$invalid && !form.body.$pristine" class="help-block">No message at all? Really?</p>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" ng-disabled="form.$invalid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -9,10 +9,60 @@ a {
   color: black;
 }
 
-a:link, a:hover, a:active, a:focus {
+a.social-button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a:hover, a:active, a:focus {
   color: #b30000;
   text-decoration: none;
   outline: 0;
+}
+
+button {
+  color:black;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  vertical-align: center;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+button[disabled] {
+  color:grey;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  vertical-align: center;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+button:disabled:hover {
+  color:grey;
+  background-color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
 }
 
 img {
@@ -39,12 +89,25 @@ h1 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-style: normal;
   font-weight: bold;
+  font-style: normal;
+  line-height: 2em;
+}
+
+label {
+  font-size: 34px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+textarea {
+  resize: vertical;
 }
 
 p.large {
@@ -90,4 +153,9 @@ p.large {
 
 .row-centered {
   text-align: center;
+}
+
+.social-buttons {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

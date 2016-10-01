@@ -1,18 +1,20 @@
 <link rel="stylesheet" href="/client/public/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/client/public/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/client/public/css/bootstrap-social.css" />
 <link rel="stylesheet" href="/client/public/css/main-site.css" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
-<body ng-app="ts" ng-controller="rootController">
+<body ng-app="marksite" ng-controller="rootController">
   <header>
     <div class="container-fluid">
       <div class="row row-centered">
         <div class="col-xs-12 site-header">
           <a href="/home" id="home-link">Home</a>
-          <a>Bio</a>
-          <a>Tour</a>
+          <a scroll-on-click href="/home#bio">Bio</a>
+          <a scroll-on-click href="/home#tour">Tour</a>
           <h2 class="text-center">Mark Morton <br />Jr.</h2>
-          <a>Visual</a>
+          <a scroll-on-click href="/home#visual">Visual</a>
           <a href="/home/contact">Contact</a>
         </div>
       </div>
@@ -29,3 +31,4 @@
 <script src="/client/public/app.js"></script>
 <script src="/client/public/js/controllers/homeController.js"></script>
 <script src="/client/public/js/controllers/contactController.js"></script>
+<script src="/client/public/js/directives/scrollOnClick.js"></script>
