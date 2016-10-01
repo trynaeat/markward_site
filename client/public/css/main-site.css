@@ -14,10 +14,15 @@ a.social-button {
   margin-right: 5px;
 }
 
-a:hover, a:active, a:focus {
+a:hover, a:active {
   color: #b30000;
   text-decoration: none;
   outline: 0;
+}
+
+a:focus {
+  color:black;
+  text-decoration: none;
 }
 
 button {
