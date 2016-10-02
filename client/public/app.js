@@ -18,6 +18,6 @@ ms.config(function($routeProvider, $locationProvider) {
   });
 });
 
-ms.controller('rootController', ['$scope', '$location', function($scope, $location) {
-
+ms.controller('rootController', ['$scope', '$location', '$document', function($scope, $location, $document) {
+  $scope.appearHeight = 500;
 }]);

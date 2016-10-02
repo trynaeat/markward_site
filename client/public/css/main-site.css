@@ -164,3 +164,30 @@ p.large {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.reactive-navbar {
+  position: fixed;
+  top: 0;
+  height: 35px;
+  width: 100%;
+  transition: top 0.2s linear;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  padding-top: 10px;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: uppercase;
+}
+
+.reactive-navbar-hidden {
+  position: fixed;
+  top: -30px;
+  height: 35px;
+  width: 100%;
+  transition: top 0.2s linear;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: uppercase;
+}
