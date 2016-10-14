@@ -20,14 +20,27 @@
       </div>
     </div>
   </header>
-  <div reactive-navbar appear-height="appearHeight">
+  <div reactive-navbar appear-height="appearHeight" class="hidden-xs">
     <a scroll-on-click href="/home#header">Home</a>
     <a scroll-on-click href="/home#bio">Bio</a>
     <a scroll-on-click href="/home#tour">Tour</a>
     <a scroll-on-click href="/home#visual">Visual</a>
     <a href="/home/contact">Contact</a>
   </div>
+  <div class="mobile-menu-dropdown visible-xs">
+    <button type="button" class="btn btn-lg" ng-click="toggleMobileMenu()" style="outline:none;">
+      <span class="glyphicon glyphicon-th-list"></span>
+    </button>
+  </div>
   <div ng-view></div>
+  <div class="mobile-menu-overlay" ng-show="openMobileMenu">
+    <div class="mobile-menu text-center">
+      <div class="mobile-menu-option"><a scroll-on-click href="/home#header" class="mobile-menu-option" ng-click="toggleMobileMenu()">Home</a></div>
+      <div class="mobile-menu-option"><a scroll-on-click href="/home#bio" class="mobile-menu-option" ng-click="toggleMobileMenu()">Bio</a></div>
+      <div class="mobile-menu-option"><a scroll-on-click href="/home#tour" class="mobile-menu-option" ng-click="toggleMobileMenu()">Tour</a></div>
+      <div class="mobile-menu-option"><a scroll-on-click href="/home#visual" class="mobile-menu-option" ng-click="toggleMobileMenu()">Visual</a></div>
+    </div>
+  </div>
 </body>
 
 <script src="/client/public/js/lib/jquery-3.1.1.min.js"></script>

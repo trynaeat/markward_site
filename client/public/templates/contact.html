@@ -13,10 +13,10 @@
           <p ng-show="form.subject.$invalid && !form.subject.$pristine" class="help-block">Subject is required.</p>
         </div>
         <div class="form-group" ng-class="{ 'has-error' : form.body.$invalid && !form.body.$pristine }">
-          <label for="body">Body <sup>*</sup></label>
+          <label for="body">Message <sup>*</sup></label>
           <textarea class="form-control" name="body" rows="8" cols="50" ng-model="emailForm.body" ng-trim="false" maxlength="2000" required></textarea>
           <span class="form-help" ng-hide="form.body.$invalid && !form.body.$pristine">Characters remaining: {{2000 - emailForm.body.length}}</span>
-          <p ng-show="form.body.$invalid && !form.body.$pristine" class="help-block">No message at all? Really?</p>
+          <p ng-show="form.body.$invalid && !form.body.$pristine" class="help-block">Message is required.</p>
         </div>
         <div class="form-group text-center">
           <button type="submit" ng-disabled="form.$invalid">Submit</button>

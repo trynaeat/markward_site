@@ -20,4 +20,9 @@ ms.config(function($routeProvider, $locationProvider) {
 
 ms.controller('rootController', ['$scope', '$location', '$document', function($scope, $location, $document) {
   $scope.appearHeight = 500;
+  $scope.openMobileMenu = false;
+
+  $scope.toggleMobileMenu = function() {
+    $scope.openMobileMenu = !$scope.openMobileMenu;
+  }
 }]);
