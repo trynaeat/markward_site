@@ -136,6 +136,7 @@ p.large {
   line-height: 1.2em;
   font-style: normal;
   letter-spacing: 0.09375em;
+  white-space: nowrap;
 }
 
 .row-fluid.small-gutters {
