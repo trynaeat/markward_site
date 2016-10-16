@@ -1,7 +1,9 @@
-var nodemailer = require('nodemailer');
+var nodemailer = require('nodemailer'),
+    config = require('../config/config.js');
+
 var exports = module.exports = {};
 
-var contactEmail = 'jamesparks10@gmail.com';
+var contactEmail = config.email.recepient;
 var directConfig = {
   name: 'teamglenn.org',
   direct: true
