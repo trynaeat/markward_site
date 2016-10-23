@@ -254,3 +254,12 @@ p.large {
   min-width: 100%;
   max-width: none;
 }
+
+.alert {
+  position: fixed;
+  z-index: 3;
+  right: 20px;
+  top: 20px;
+  width: 300px;
+  font-size: 1.5em;
+}
